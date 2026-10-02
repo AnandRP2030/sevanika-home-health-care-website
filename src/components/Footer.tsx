@@ -20,6 +20,7 @@ const services = [
   'Mother & Baby Care',
   'Palliative Care',
   'Personal Care & Grooming',
+  'House Maid Services',
 ];
 
 const WHATSAPP_NUMBER = '917356610397';

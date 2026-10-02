@@ -13,6 +13,7 @@ const services = [
   { emoji: '🛁', title: 'Personal Care & Grooming', desc: 'Bathing, grooming and hygiene assistance performed with care and dignity.', highlight: false },
   { emoji: '👶', title: 'Mother & Baby Care', desc: 'Postnatal care for new mothers and newborns, helping families through the transition.', highlight: true },
   { emoji: '⏱️', title: 'Short & Long-Term Care', desc: 'Flexible care plans from short-term recovery support to long-term caregiver placement.', highlight: false },
+  { emoji: '🧹', title: 'House Maid Services', desc: 'Reliable and trusted house maid services for household chores, cleaning and daily home management.', highlight: false },
 ];
 
 const cardVariants: Variants = {
