@@ -1,0 +1,137 @@
+.section {
+  position: relative;
+  background: linear-gradient(135deg, var(--teal-50) 0%, white 50%, #fef3c7 100%);
+  overflow: hidden;
+}
+
+.bgShape {
+  position: absolute;
+  top: -100px;
+  right: -100px;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(13,148,136,0.08) 0%, transparent 70%);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: 4rem;
+  align-items: start;
+}
+
+/* Info panel */
+.infoPanel {
+  position: sticky;
+  top: 100px;
+  background: linear-gradient(135deg, var(--teal-800), var(--navy-900));
+  border-radius: var(--radius-xl);
+  padding: 2.5rem;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.briefcaseIcon {
+  color: var(--gold-500);
+}
+
+.infoTitle {
+  font-size: clamp(1.4rem, 3vw, 2rem);
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.infoDesc {
+  font-size: 0.95rem;
+  color: rgba(255,255,255,0.8);
+  line-height: 1.7;
+}
+
+.infoDesc strong { color: white; }
+
+.perks {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  padding: 1rem;
+  background: rgba(255,255,255,0.08);
+  border-radius: var(--radius-md);
+  border: 1px solid rgba(255,255,255,0.12);
+}
+
+.perk {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+  font-size: 0.875rem;
+  color: rgba(255,255,255,0.85);
+}
+
+.contactInfo {
+  padding-top: 0.5rem;
+  border-top: 1px solid rgba(255,255,255,0.15);
+  font-size: 0.875rem;
+  color: rgba(255,255,255,0.7);
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.contactInfo a { color: var(--teal-200); text-decoration: none; }
+.contactInfo a:hover { color: white; }
+
+/* Form card */
+.formCard {
+  background: white;
+  border-radius: var(--radius-xl);
+  padding: 2.5rem;
+  box-shadow: var(--shadow-xl);
+  border: 1px solid rgba(13,148,136,0.08);
+}
+
+.formTitle {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--secondary);
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid var(--teal-100);
+}
+
+.formActions {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 0.25rem;
+}
+
+.spinner {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border: 2px solid rgba(255,255,255,0.3);
+  border-top-color: white;
+  border-radius: 50%;
+  animation: spin 0.6s linear infinite;
+}
+
+@keyframes spin { to { transform: rotate(360deg); } }
+
+@media (max-width: 900px) {
+  .layout {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .infoPanel { position: static; }
+}
+
+@media (max-width: 640px) {
+  .formCard { padding: 1.5rem; border-radius: var(--radius-lg); }
+  .formActions { flex-direction: column; }
+  .formActions .btn { width: 100%; justify-content: center; }
+}
