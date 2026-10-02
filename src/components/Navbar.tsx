@@ -27,8 +27,15 @@ export default function Navbar() {
   const handleNav = (href: string) => {
     setActive(href);
     setIsOpen(false);
-    const el = document.querySelector(href);
-    if (el) el.scrollIntoView({ behavior: 'smooth' });
+    // Use setTimeout to let the drawer close animation finish before scrolling.
+    // scrollIntoView is unreliable on Android browsers — window.scrollTo is more robust.
+    setTimeout(() => {
+      const el = document.querySelector(href) as HTMLElement | null;
+      if (!el) return;
+      const navbarHeight = 70; // fixed navbar height in px
+      const top = el.getBoundingClientRect().top + window.pageYOffset - navbarHeight;
+      window.scrollTo({ top, behavior: 'smooth' });
+    }, 50);
   };
 
   return (
