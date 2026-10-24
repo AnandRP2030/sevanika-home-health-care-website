@@ -4,16 +4,21 @@ import styles from './Services.module.css';
 
 const services = [
   { emoji: '🕐', title: '24×7 Patient Care', desc: 'Round-the-clock caregiver services for continuous patient support and monitoring.', highlight: true },
-  { emoji: '🏥', title: 'Hospital Bystander Nursing', desc: 'Professional bystander services at hospitals to support patients admitted for treatment.', highlight: false },
-  { emoji: '🏠', title: 'Home Nursing Care', desc: 'Skilled nursing care delivered in the comfort of the patient\'s home by trained nurses.', highlight: false },
-  { emoji: '👩‍⚕️', title: 'Nursing Assistant Services', desc: 'Qualified nursing assistants providing routine patient care and daily support.', highlight: false },
-  { emoji: '👴', title: 'Elderly & Bedridden Care', desc: 'Specialised, respectful care for elderly and bedridden patients with full dignity.', highlight: true },
-  { emoji: '🩹', title: 'Post-Surgical Care', desc: 'Expert care and monitoring during recovery after surgical procedures.', highlight: false },
-  { emoji: '💙', title: 'Palliative & Supportive Care', desc: 'Compassionate supportive care focused on comfort, quality of life and family wellbeing.', highlight: false },
-  { emoji: '🛁', title: 'Personal Care & Grooming', desc: 'Bathing, grooming and hygiene assistance performed with care and dignity.', highlight: false },
-  { emoji: '👶', title: 'Mother & Baby Care', desc: 'Postnatal care for new mothers and newborns, helping families through the transition.', highlight: true },
-  { emoji: '⏱️', title: 'Short & Long-Term Care', desc: 'Flexible care plans from short-term recovery support to long-term caregiver placement.', highlight: false },
-  { emoji: '🧹', title: 'House Maid Services', desc: 'Reliable and trusted house maid services for household chores, cleaning and daily home management.', highlight: false },
+  { emoji: '👴', title: 'Elderly Care & Senior Companionship', desc: 'Compassionate care and meaningful companionship for elderly individuals, ensuring comfort, dignity and a better quality of life.', highlight: false },
+  { emoji: '🏥', title: 'Hospital & Home Bystander Services', desc: 'Dedicated bystander support for patients admitted to hospitals or recovering at home, providing round-the-clock assistance.', highlight: false },
+  { emoji: '🛁', title: 'Personal Care & Hygiene Assistance', desc: 'Respectful assistance with bathing, grooming and daily hygiene routines, helping patients maintain cleanliness and dignity.', highlight: false },
+  { emoji: '🩹', title: 'Post-Surgical Recovery Support', desc: 'Expert care and close monitoring during the critical recovery period following surgical procedures.', highlight: false },
+  { emoji: '🚗', title: 'Doctor Visit & Medical Escort Services', desc: 'Reliable escort and accompaniment for patients during doctor visits, hospital appointments and medical consultations.', highlight: false },
+  { emoji: '💊', title: 'Feeding & Medication Reminders', desc: 'Timely reminders and assistance with meals and medication schedules to ensure patients stay on track with their care plan.', highlight: false },
+  { emoji: '👶', title: 'Mother & Baby Care', desc: 'Postnatal care for new mothers and newborns, helping families through the transition with professional support and reassurance.', highlight: true },
+  { emoji: '🧠', title: 'Dementia & Memory Care Support', desc: 'Specialised care for individuals living with dementia and memory-related conditions, delivered with patience and empathy.', highlight: false },
+  { emoji: '🌏', title: 'NRI Elder Care & Routine Welfare Checks', desc: 'Regular welfare visits and care coordination for elderly parents of NRIs, providing peace of mind across distances.', highlight: false },
+  { emoji: '🌙', title: 'Night Care & Emergency Bystander Support', desc: 'Overnight care and rapid emergency bystander support to ensure patient safety throughout the night.', highlight: false },
+  { emoji: '♿', title: 'Differently-Abled Support Services', desc: 'Personalised assistance and daily support services for individuals with physical or developmental disabilities.', highlight: false },
+  { emoji: '🧹', title: 'Home Cleaning & Housekeeping Services', desc: 'Professional home cleaning and housekeeping to maintain a hygienic, tidy and comfortable living environment.', highlight: false },
+  { emoji: '🍳', title: 'House Maid & Cooking Assistance', desc: 'Reliable house maid services combined with cooking assistance, ensuring a well-managed and nourishing home.', highlight: false },
+  { emoji: '⏱️', title: 'Short-Term & Long-Term Caregiver Placement', desc: 'Flexible caregiver placement options — from short-term recovery support to long-term dedicated care arrangements.', highlight: false },
+  { emoji: '👩‍⚕️', title: 'Nursing Assistant & Home Health Aide Services', desc: 'Qualified nursing assistants and home health aides providing skilled routine care and daily patient support at home.', highlight: true },
 ];
 
 const cardVariants: Variants = {

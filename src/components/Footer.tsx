@@ -13,14 +13,21 @@ const navLinks = [
 
 const services = [
   '24×7 Patient Care',
-  'Hospital Bystander Nursing',
-  'Home Nursing Care',
-  'Elderly & Bedridden Care',
-  'Post-Surgical Care',
+  'Elderly Care & Senior Companionship',
+  'Hospital & Home Bystander Services',
+  'Personal Care & Hygiene Assistance',
+  'Post-Surgical Recovery Support',
+  'Doctor Visit & Medical Escort Services',
+  'Feeding & Medication Reminders',
   'Mother & Baby Care',
-  'Palliative Care',
-  'Personal Care & Grooming',
-  'House Maid Services',
+  'Dementia & Memory Care Support',
+  'NRI Elder Care & Routine Welfare Checks',
+  'Night Care & Emergency Bystander Support',
+  'Differently-Abled Support Services',
+  'Home Cleaning & Housekeeping Services',
+  'House Maid & Cooking Assistance',
+  'Short-Term & Long-Term Caregiver Placement',
+  'Nursing Assistant & Home Health Aide Services',
 ];
 
 const WHATSAPP_NUMBER = '917356610397';
