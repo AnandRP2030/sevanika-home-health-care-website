@@ -125,7 +125,7 @@ export default function Hero() {
               From hospital bystander services to home nursing — we provide dignified, personalised care for every patient.
             </p>
             <div className={styles.serviceChips}>
-              {['Mother & Baby Care', 'Home Nursing', 'Bystander Services', 'Maid & Cooking', 'Nursing Assistant'].map(s => (
+              {['Home Nursing', 'Mother & Baby Care', 'Hospital & Home Bystander Services', 'House Maid & Cooking Assistance', 'Nursing Assistant & Home Health Aide Services'].map(s => (
                 <span key={s} className={styles.chip}>{s}</span>
               ))}
             </div>
